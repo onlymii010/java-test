@@ -1,0 +1,58 @@
+/* Dein bisheriger Stil, jetzt für den Button */
+#menu {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    position: fixed; /* Hält den Button an Ort und Stelle */
+    top: 15px;
+    left: 15px;
+    z-index: 1000; /* Stellt sicher, dass er über dem Menü liegt */
+}
+
+#menu img {
+    width: 100%; /* Passt das Bild an die Buttongröße an */
+    height: auto;
+}
+
+/* Das seitliche Menü (standardmäßig versteckt) */
+#side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transform: translateX(-100%); /* Nach links aus dem Bild schieben */
+    transition: transform 0.3s ease-in-out; /* Sanfte Animation */
+    padding-top: 80px;
+}
+
+/* Diese Klasse macht das Menü sichtbar */
+#side-menu.is-visible {
+    transform: translateX(0);
+}
+
+/* Links im Menü */
+#side-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#side-menu a:hover {
+    background-color: #555;
+}
+
+/* NEU: Stil für den aktiven Link */
+#side-menu a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+.main-header{
+    background-color: chartreuse;
+    width: 100%;
+    height: 120px;
+}

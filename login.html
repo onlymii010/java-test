@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registrierung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="menu"><img src="assets/img/menu.png" alt="Menü öffnen"></button>
+    <nav id="side-menu">
+        <a href="index.html">Übersicht</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="statistik.html">Statistik</a>
+        <a href="login.html">Login</a> </nav>
+
+    <main style="padding-top: 80px; text-align: center;">
+        <h1>Anmelden oder Registrieren</h1>
+
+        <div style="margin-bottom: 40px;">
+            <h2>Registrieren</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Benutzername" required>
+                <input type="password" id="register-password" placeholder="Passwort" required>
+                <button type="submit">Registrieren</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Benutzername" required>
+                <input type="password" id="login-password" placeholder="Passwort" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+         <div id="admin-panel" style="display:none; margin-top: 40px;">
+            <h3>Admin-Bereich</h3>
+            <p>Du bist als Admin angemeldet.</p>
+        </div>
+    </main>
+</body>
+</html>
